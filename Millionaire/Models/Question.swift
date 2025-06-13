@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Question: Identifiable {
+struct Question: Identifiable, Codable {
     let id = UUID()
     let text: String
     let answers: [String]

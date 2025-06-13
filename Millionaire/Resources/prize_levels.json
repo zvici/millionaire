@@ -1,0 +1,77 @@
+[
+    {
+        "level": 15,
+        "prize": 150000,
+        "isMilestone": true
+    },
+    {
+        "level": 14,
+        "prize": 85000,
+        "isMilestone": false
+    },
+    {
+        "level": 13,
+        "prize": 60000,
+        "isMilestone": false
+    },
+    {
+        "level": 12,
+        "prize": 40000,
+        "isMilestone": false
+    },
+    {
+        "level": 11,
+        "prize": 30000,
+        "isMilestone": false
+    },
+    {
+        "level": 10,
+        "prize": 22000,
+        "isMilestone": true
+    },
+    {
+        "level": 9,
+        "prize": 14000,
+        "isMilestone": false
+    },
+    {
+        "level": 8,
+        "prize": 10000,
+        "isMilestone": false
+    },
+    {
+        "level": 7,
+        "prize": 6000,
+        "isMilestone": false
+    },
+    {
+        "level": 6,
+        "prize": 3000,
+        "isMilestone": false
+    },
+    {
+        "level": 5,
+        "prize": 2000,
+        "isMilestone": true
+    },
+    {
+        "level": 4,
+        "prize": 1000,
+        "isMilestone": false
+    },
+    {
+        "level": 3,
+        "prize": 600,
+        "isMilestone": false
+    },
+    {
+        "level": 2,
+        "prize": 400,
+        "isMilestone": false
+    },
+    {
+        "level": 1,
+        "prize": 200,
+        "isMilestone": false
+    }
+]

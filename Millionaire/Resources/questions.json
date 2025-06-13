@@ -1,0 +1,152 @@
+[
+    {
+        "text": "Điền vào câu thành ngữ sau: Đàn gảy ... trâu?",
+        "answers": [
+            "Chân",
+            "Mắt",
+            "Tai",
+            "Mũi"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "text": "Thủ đô Pháp?",
+        "answers": [
+            "London",
+            "Paris",
+            "Berlin",
+            "Rome"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "text": "Loài vật nào được gọi là 'chúa sơn lâm'?",
+        "answers": [
+            "Voi",
+            "Sư tử",
+            "Hổ",
+            "Báo"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "text": "Cơ quan nào trong cơ thể người có chức năng bơm máu?",
+        "answers": [
+            "Phổi",
+            "Gan",
+            "Tim",
+            "Thận"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "text": "Loại quả nào dưới đây có hạt ở bên ngoài?",
+        "answers": [
+            "Cam",
+            "Chuối",
+            "Dâu tây",
+            "Táo"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "text": "Từ nào không cùng nhóm: Đỏ, Vàng, Xanh, Nặng?",
+        "answers": [
+            "Đỏ",
+            "Vàng",
+            "Xanh",
+            "Nặng"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "text": "Người Việt thường cúng ông Công ông Táo vào ngày nào?",
+        "answers": [
+            "23 Tết",
+            "30 Tết",
+            "15 tháng Giêng",
+            "Mùng 1 Tết"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "text": "Ai là người sáng lập hãng Microsoft?",
+        "answers": [
+            "Steve Jobs",
+            "Jeff Bezos",
+            "Mark Zuckerberg",
+            "Bill Gates"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "text": "Quốc gia nào nổi tiếng với kim tự tháp?",
+        "answers": [
+            "Ấn Độ",
+            "Mexico",
+            "Ai Cập",
+            "Trung Quốc"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "text": "Trong hình học, hình có 5 cạnh gọi là gì?",
+        "answers": [
+            "Tứ giác",
+            "Ngũ giác",
+            "Lục giác",
+            "Thất giác"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "text": "Hệ điều hành Android thuộc sở hữu công ty nào?",
+        "answers": [
+            "Apple",
+            "Microsoft",
+            "Google",
+            "Samsung"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "text": "Nguyên tố nào có ký hiệu hóa học là 'O'?",
+        "answers": [
+            "Oxy",
+            "Vàng",
+            "Kali",
+            "Sắt"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "text": "Tác giả Truyện Kiều là ai?",
+        "answers": [
+            "Nguyễn Du",
+            "Nguyễn Trãi",
+            "Hồ Xuân Hương",
+            "Tố Hữu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "text": "Một năm nhuận có bao nhiêu ngày?",
+        "answers": [
+            "364",
+            "365",
+            "366",
+            "367"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "text": "Ai là người đầu tiên đặt chân lên Mặt Trăng?",
+        "answers": [
+            "Yuri Gagarin",
+            "Neil Armstrong",
+            "Buzz Aldrin",
+            "Elon Musk"
+        ],
+        "correctIndex": 1
+    }
+]

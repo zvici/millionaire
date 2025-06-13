@@ -10,20 +10,24 @@ import SwiftUI
 struct GameView: View {
     @ObservedObject var viewModel: GameViewModel = GameViewModel()
     @State private var activeModal: ActiveModal?
-    
+
     private var currentQuestion: Question {
         viewModel.questions[viewModel.currentQuestionIndex]
     }
-    
-    func checkAnswer(index: Int){
+
+    func checkAnswer(index: Int) {
         viewModel.checkAnswer(index: index)
+    }
+
+    func gameOver() {
+        viewModel.restartGame()
     }
 
     var body: some View {
         VStack(spacing: 16) {
             HStack {
-                IconButton(icon: "hand.raised", iconSize: 26){
-                    print("Game over")
+                IconButton(icon: "hand.raised", iconSize: 26) {
+                    self.gameOver()
                 }
                 Spacer()
                 Text("Điểm: \(viewModel.score)$")
@@ -32,18 +36,23 @@ struct GameView: View {
                     .fontWeight(.bold)
                     .glassEffect()
                 Spacer()
-                IconButton(icon: "slider.horizontal.3", iconSize: 26){
+                IconButton(icon: "slider.horizontal.3", iconSize: 26) {
                     activeModal = .gameInfo
                 }
             }
             HStack(spacing: 20) {
-                IconButton(icon: "50.circle.fill", iconSize: 40){
-                    print("50/50")
+                IconButton(
+                    icon: "50.circle.fill",
+                    iconSize: 40,
+                    disabled: viewModel.hasUsedFiftyFifty
+                ) {
+                    viewModel.useFiftyFifty()
                 }
-                IconButton(icon: "phone.fill", iconSize: 30){
+                IconButton(icon: "phone.fill", iconSize: 30, disabled: true) {
                     print("Phone")
                 }
-                IconButton(icon: "person.3.fill", iconSize: 20){
+                IconButton(icon: "person.3.fill", iconSize: 20, disabled: true)
+                {
                     print("People")
                 }
             }
@@ -75,7 +84,9 @@ struct GameView: View {
                     answer in
                     AnswerButton(
                         title:
-                            "\(Character(UnicodeScalar(65 + index)!)): \(answer)"
+                            "\(Character(UnicodeScalar(65 + index)!)): \(answer)",
+                        dimmed: viewModel.fiftyFiftyIndices != nil
+                            && !(viewModel.fiftyFiftyIndices!.contains(index))
                     ) {
                         self.checkAnswer(index: index)
                     }
@@ -92,11 +103,20 @@ struct GameView: View {
         .fullScreenCover(item: $activeModal) { modal in
             switch modal {
             case .gameInfo:
-                GameInfoModal()
-            case .settings:
-                GameInfoModal()
-            case .about:
-                GameInfoModal()
+                GameInfoModal(
+                    currentLevel: viewModel.currentQuestionIndex,
+                    prizeLevels: viewModel.prizeLevels
+                )
+            case .phoneAFriend:
+                GameInfoModal(
+                    currentLevel: viewModel.currentQuestionIndex,
+                    prizeLevels: viewModel.prizeLevels
+                )
+            case .askTheAudience:
+                GameInfoModal(
+                    currentLevel: viewModel.currentQuestionIndex,
+                    prizeLevels: viewModel.prizeLevels
+                )
             }
         }
     }
