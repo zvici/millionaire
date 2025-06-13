@@ -27,8 +27,9 @@ SwiftUI
 Combine (for reactive state)
 
 ## 💡 Ideas for Future Improvements
-[] Countdown timer for each question
-[]End game summary with win/loss screen
-[]Sound effects or animations
-[]Save score history
+[ ] Countdown timer for each question  
+[ ] End game summary with win/loss screen  
+[ ] Sound effects or animations  
+[ ] Save score history  
+
 
