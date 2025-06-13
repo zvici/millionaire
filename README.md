@@ -17,7 +17,7 @@ A quiz game inspired by the popular TV show **"Who Wants to Be a Millionaire?"**
 
 1. Clone the repo:
    ```bash
-   git clone [https://github.com/zvici/millionaire-game.git](https://github.com/zvici/millionaire.git)
+   git clone https://github.com/zvici/millionaire-game.git
 2. Open with Xcode (v15+)
 
 3. Build and run on a simulator or real device
