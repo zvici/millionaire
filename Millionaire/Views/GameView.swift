@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GameView: View {
     @ObservedObject var viewModel: GameViewModel = GameViewModel()
+    @State private var activeModal: ActiveModal?
+    
     private var currentQuestion: Question {
         viewModel.questions[viewModel.currentQuestionIndex]
     }
@@ -24,14 +26,14 @@ struct GameView: View {
                     print("Game over")
                 }
                 Spacer()
-                Text("Điểm: \(viewModel.score)")
+                Text("Điểm: \(viewModel.score)$")
                     .padding(16)
                     .font(.system(size: 18))
                     .fontWeight(.bold)
                     .glassEffect()
                 Spacer()
                 IconButton(icon: "slider.horizontal.3", iconSize: 26){
-                    print("Info")
+                    activeModal = .gameInfo
                 }
             }
             HStack(spacing: 20) {
@@ -87,6 +89,16 @@ struct GameView: View {
             Image("background").resizable().edgesIgnoringSafeArea(.all)
         )
         .navigationBarBackButtonHidden(true)
+        .fullScreenCover(item: $activeModal) { modal in
+            switch modal {
+            case .gameInfo:
+                GameInfoModal()
+            case .settings:
+                GameInfoModal()
+            case .about:
+                GameInfoModal()
+            }
+        }
     }
 }
 
