@@ -48,8 +48,13 @@ struct GameView: View {
                 ) {
                     viewModel.useFiftyFifty()
                 }
-                IconButton(icon: "phone.fill", iconSize: 30, disabled: true) {
-                    print("Phone")
+                IconButton(
+                    icon: "phone.fill",
+                    iconSize: 30,
+                    disabled: viewModel.hasUsedphoneAFriend
+                ) {
+                    viewModel.usePhoneAFriend()
+                    activeModal = .phoneAFriend
                 }
                 IconButton(icon: "person.3.fill", iconSize: 20, disabled: true)
                 {
@@ -108,9 +113,8 @@ struct GameView: View {
                     prizeLevels: viewModel.prizeLevels
                 )
             case .phoneAFriend:
-                GameInfoModal(
-                    currentLevel: viewModel.currentQuestionIndex,
-                    prizeLevels: viewModel.prizeLevels
+                PhoneAFriendModal(
+                    currentQuestion: currentQuestion
                 )
             case .askTheAudience:
                 GameInfoModal(

@@ -15,8 +15,9 @@ class GameViewModel: ObservableObject {
     @Published var isGameOver: Bool = false
     @Published var prizeLevels: [PrizeLevel] = []
     @Published var score: Int = 0
-    @Published var hasUsedFiftyFifty = false
+    @Published var hasUsedFiftyFifty: Bool = false
     @Published var fiftyFiftyIndices: [Int]? = nil
+    @Published var hasUsedphoneAFriend: Bool = false
 
     init() {
         fetchQuestions()
@@ -95,5 +96,9 @@ class GameViewModel: ObservableObject {
         let remainingWrongIndex = indices.first!
         fiftyFiftyIndices = [correctIndex, remainingWrongIndex]
         hasUsedFiftyFifty = true
+    }
+    
+    func usePhoneAFriend() {
+        hasUsedphoneAFriend = true
     }
 }
