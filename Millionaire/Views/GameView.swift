@@ -30,11 +30,19 @@ struct GameView: View {
                     self.gameOver()
                 }
                 Spacer()
-                Text("Điểm: \(viewModel.score)$")
-                    .padding(16)
-                    .font(.system(size: 18))
-                    .fontWeight(.bold)
-                    .glassEffect()
+                HStack {
+                    Image(systemName: "dollarsign.circle.fill")
+                        .font(.system(size: 22))
+                        .foregroundStyle(AppColor.gold)
+                    Text("\(viewModel.score)")
+                        .font(.system(size: 20))
+                        .fontWeight(.bold)
+                        .lineLimit(nil)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(.white)
+                }
+                .padding(14)
+                .modifier(DoubleBorderBackground(cornerRadius: 30))
                 Spacer()
                 IconButton(icon: "slider.horizontal.3", iconSize: 26) {
                     activeModal = .gameInfo
@@ -56,13 +64,17 @@ struct GameView: View {
                     viewModel.usePhoneAFriend()
                     activeModal = .phoneAFriend
                 }
-                IconButton(icon: "person.3.fill", iconSize: 20, disabled: true)
-                {
-                    print("People")
+                IconButton(
+                    icon: "person.3.fill",
+                    iconSize: 20,
+                    disabled: viewModel.hasUsedAskAudience
+                ) {
+                    viewModel.useAskAudience()
+                    activeModal = .askTheAudience
                 }
             }
             .padding(.vertical, 30)
-            ZStack(alignment: .topLeading) {
+            ZStack(alignment: .top) {
                 VStack {
                     Text(currentQuestion.text)
                         .font(.system(size: 20))
@@ -70,16 +82,37 @@ struct GameView: View {
                         .lineLimit(nil)
                         .multilineTextAlignment(.center)
                         .frame(minHeight: 150)
+                        .foregroundStyle(.white)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
-                .glassEffect(.regular, in: .rect(cornerRadius: 20))
-
-                Text("Câu \(viewModel.currentQuestionIndex + 1)")
-                    .padding(16)
-                    .glassEffect()
-                    .offset(x: 0, y: -42)
-                    .fontWeight(.bold)
+                .modifier(DoubleBorderBackground())
+                Text("\(viewModel.currentQuestionIndex + 1)")
+                    .font(.system(size: 18))
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+                    .frame(width: 56, height: 56)
+                    .background(
+                        ZStack {
+                            Circle()
+                                .stroke(
+                                    LinearGradient(
+                                        colors: [
+                                            AppColor.gold, AppColor.gold2,
+                                        ],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    ),
+                                    lineWidth: 10
+                                )
+                            Circle()
+                                .fill(AppColor.background3)
+                            Circle()
+                                .stroke(AppColor.text, lineWidth: 1)
+                                .padding(2)
+                        }
+                    )
+                    .offset(y: -30)
             }
             .padding(.top, 40)
             .padding(.bottom, 20)
@@ -101,9 +134,7 @@ struct GameView: View {
         }
         .padding(.horizontal, 20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Image("background").resizable().edgesIgnoringSafeArea(.all)
-        )
+        .background(Image("background"))
         .navigationBarBackButtonHidden(true)
         .fullScreenCover(item: $activeModal) { modal in
             switch modal {
@@ -117,11 +148,17 @@ struct GameView: View {
                     currentQuestion: currentQuestion
                 )
             case .askTheAudience:
-                GameInfoModal(
-                    currentLevel: viewModel.currentQuestionIndex,
-                    prizeLevels: viewModel.prizeLevels
+                AskAudienceModal(
+                    currentQuestion: currentQuestion,
+                    fiftyFiftyIndices: viewModel.fiftyFiftyIndices
                 )
             }
+        }
+        .onAppear {
+            AudioManager.shared.playBackgroundMusic()
+        }
+        .onDisappear {
+            AudioManager.shared.stopBackgroundMusic()
         }
     }
 }

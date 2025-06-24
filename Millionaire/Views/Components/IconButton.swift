@@ -27,9 +27,33 @@ struct IconButton: View {
 
     var body: some View {
         Image(systemName: icon)
-            .frame(width: 56, height: 56)
             .font(.system(size: iconSize))
-            .glassEffect(.regular.interactive())
+            .foregroundStyle(AppColor.text)
+            .frame(width: 56, height: 56)
+            .background(
+                ZStack {
+                    // Outer gradient border
+                    Circle()
+                        .stroke(
+                            LinearGradient(
+                                colors: [AppColor.gold, AppColor.gold2],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ),
+                            lineWidth: 6
+                        )
+
+                    // Background fill
+                    Circle()
+                        .fill(AppColor.background3)
+                        .padding(3)  // Để nằm gọn trong viền ngoài
+
+                    // Inner thin border
+                    Circle()
+                        .stroke(AppColor.text, lineWidth: 1)
+                        .padding(4)  // Nằm trong viền ngoài một chút
+                }
+            )
             .opacity(disabled ? 0.3 : 1.0)
             .onTapGesture {
                 if !disabled {

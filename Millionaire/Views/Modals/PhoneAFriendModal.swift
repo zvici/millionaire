@@ -15,20 +15,20 @@ struct Helper: Identifiable, Hashable {
 
 struct ChatMessage: Identifiable, Hashable {
     let id = UUID()
-    let sender: String // "Tôi" hoặc helper.name
+    let sender: String  // "Tôi" hoặc helper.name
     let content: String
 }
 
 struct PhoneAFriendModal: View {
     let currentQuestion: Question
-    
+
     let helpers: [Helper] = [
-        Helper(name: "Khá Bảnh", avatar: "friend1"),
-        Helper(name: "Jack 97", avatar: "friend1"),
-        Helper(name: "Ronaldo", avatar: "friend1"),
-        Helper(name: "Jayce", avatar: "friend1"),
-        Helper(name: "Bình", avatar: "friend1"),
-        Helper(name: "Hà", avatar: "friend1")
+        Helper(name: "Jayce", avatar: "jayce"),
+        Helper(name: "Jinx", avatar: "jinx"),
+        Helper(name: "Vi", avatar: "vi"),
+        Helper(name: "Caitlyn", avatar: "caitlyn"),
+        Helper(name: "Ekko", avatar: "ekko"),
+        Helper(name: "Viktor", avatar: "viktor"),
     ]
     @State private var selectedHelper: Helper? = nil
     @State private var chatMessages: [ChatMessage] = []
@@ -36,18 +36,26 @@ struct PhoneAFriendModal: View {
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-        VStack(spacing: 24) {
+        let columns = [
+            GridItem(.flexible(), spacing: 20),
+            GridItem(.flexible(), spacing: 20),
+            GridItem(.flexible(), spacing: 20),
+        ]
+        VStack(alignment: .center, spacing: 20) {
             if selectedHelper != nil {
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .center, spacing: 16) {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 12) {
                             ForEach(chatMessages) { msg in
                                 HStack {
                                     if msg.sender == "Tôi" { Spacer() }
-                                    Text("\(msg.sender): \(msg.content)")
+                                    Text("\(msg.content)")
                                         .padding(10)
-                                        .background(msg.sender == "Tôi" ? Color.blue.opacity(0.6) : Color.gray.opacity(0.5))
+                                        .background(
+                                            msg.sender == "Tôi"
+                                                ? Color.blue.opacity(0.6)
+                                                : Color.gray.opacity(0.5)
+                                        )
                                         .foregroundColor(.white)
                                         .cornerRadius(12)
                                     if msg.sender != "Tôi" { Spacer() }
@@ -56,11 +64,13 @@ struct PhoneAFriendModal: View {
                         }
                     }
                 }
-                .frame(maxWidth: .infinity, maxHeight: 340)
-                Button("Đóng"){
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                Button("Đóng") {
                     dismiss()
                 }
-                .buttonStyle(.glass)
+                .foregroundStyle(.white)
+                .padding(10)
+                .modifier(DoubleBorderBackground(cornerRadius: 20))
             } else {
                 Text("Chọn người bạn muốn gọi")
                     .font(.title2)
@@ -70,12 +80,44 @@ struct PhoneAFriendModal: View {
                     ForEach(helpers) { helper in
                         Button(action: {
                             selectedHelper = helper
-                            let messages = [
-                                ChatMessage(sender: "Tôi", content: "Chào \(helper.name)!"),
-                                ChatMessage(sender: helper.name, content: "Chào bạn! Có gì giúp được không?"),
-                                ChatMessage(sender: "Tôi", content: "Đây là câu hỏi của mình: \(currentQuestion.text)"),
-                                ChatMessage(sender: helper.name, content: "Theo mình đáp án đúng là ..."),
-                            ]
+                            let answers: [ChatMessage] = currentQuestion.answers
+                                .enumerated().map { index, answer in
+                                    let label = String(
+                                        UnicodeScalar(65 + index)!
+                                    )
+                                    return ChatMessage(
+                                        sender: "Tôi",
+                                        content: "\(label). \(answer)"
+                                    )
+                                }
+                            let correctLabel = String(
+                                UnicodeScalar(
+                                    65 + currentQuestion.correctIndex
+                                )!
+                            )
+                            let messages: [ChatMessage] =
+                                [
+                                    ChatMessage(
+                                        sender: "Tôi",
+                                        content: "Chào \(helper.name)!"
+                                    ),
+                                    ChatMessage(
+                                        sender: helper.name,
+                                        content:
+                                            "Chào bạn! Có gì giúp được không?"
+                                    ),
+                                    ChatMessage(
+                                        sender: "Tôi",
+                                        content:
+                                            "Đây là câu hỏi của mình: \(currentQuestion.text)"
+                                    ),
+                                ] + answers + [
+                                    ChatMessage(
+                                        sender: helper.name,
+                                        content:
+                                            "Theo mình đáp án đúng là \(correctLabel)"
+                                    )
+                                ]
                             chatMessages = []
                             pendingMessages = messages
                             Task {
@@ -93,7 +135,7 @@ struct PhoneAFriendModal: View {
                             }
                             .padding()
                             .frame(maxWidth: .infinity, maxHeight: 300)
-                            .glassEffect(.regular, in: .rect(cornerRadius: 20))
+                            .modifier(DoubleBorderBackground())
                         }
                     }
                 }
@@ -103,7 +145,7 @@ struct PhoneAFriendModal: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             LinearGradient(
-                colors: [.blue.opacity(0.6), .black],
+                colors: [AppColor.background3, .black],
                 startPoint: .top,
                 endPoint: .bottom
             )
@@ -116,8 +158,4 @@ struct PhoneAFriendModal: View {
             chatMessages.append(pendingMessages.removeFirst())
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

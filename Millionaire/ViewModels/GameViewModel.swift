@@ -18,6 +18,7 @@ class GameViewModel: ObservableObject {
     @Published var hasUsedFiftyFifty: Bool = false
     @Published var fiftyFiftyIndices: [Int]? = nil
     @Published var hasUsedphoneAFriend: Bool = false
+    @Published var hasUsedAskAudience: Bool = false
 
     init() {
         fetchQuestions()
@@ -100,5 +101,9 @@ class GameViewModel: ObservableObject {
     
     func usePhoneAFriend() {
         hasUsedphoneAFriend = true
+    }
+    
+    func useAskAudience() {
+        hasUsedAskAudience = true
     }
 }

@@ -17,28 +17,29 @@ struct StartView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding()
-                    .glassEffect()
                 Spacer()
                 NavigationLink(destination: GameView()) {
                     Label("Start Game", systemImage: "play.fill")
                         .font(.system(size: 20))
-                        .frame(width: 200, height: 40)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                        .frame(width: 200, height: 48)
                 }
-                .buttonStyle(.glass)
+                .modifier(DoubleBorderBackground())
                 Button(action: {}) {
                     Label("High Score", systemImage: "star.fill")
                         .font(.system(size: 20))
-                        .frame(width: 200, height: 40)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                        .frame(width: 200, height: 48)
                 }
-                .buttonStyle(.glass)
+                .modifier(DoubleBorderBackground())
                 Spacer()
 
             }
             .padding(40)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                Image("background").resizable().edgesIgnoringSafeArea(.all)
-            )
+            .background(Image("background"))
         }
     }
 }

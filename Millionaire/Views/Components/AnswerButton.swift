@@ -20,17 +20,30 @@ struct AnswerButton: View {
         }) {
             Text(title)
                 .font(.system(size: 20))
+                .foregroundStyle(.white)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 16)
-                .frame(height: 40)
-                .cornerRadius(16)
-                .opacity(dimmed ? 0.0 : 1.0)
+                .frame(height: 48)
         }
-        .buttonStyle(.glass)
-        .disabled(dimmed) // không cho bấm nếu dimmed
+        .background(
+            ZStack {
+                Rectangle()
+                    .stroke(
+                        LinearGradient(
+                            colors: [AppColor.gold, AppColor.gold2],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 5
+                    )
+                Rectangle()
+                    .fill(AppColor.background3)
+            }
+        )
+        .opacity(dimmed ? 0.1 : 1.0)
+        .disabled(dimmed)
     }
 }
-
 
 #Preview {
     ContentView()

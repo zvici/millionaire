@@ -7,29 +7,26 @@
 
 import SwiftUI
 
-
 struct GameInfoModal: View {
     @Environment(\.dismiss) var dismiss
     let currentLevel: Int
     let prizeLevels: [PrizeLevel]
-    
+
     var body: some View {
         VStack {
             VStack {
                 ForEach(prizeLevels) { level in
                     HStack {
                         Text("\(level.level)")
+                            .foregroundStyle(.white)
                         Spacer()
                         Text("\(level.prize) $")
                             .fontWeight(.bold)
+                            .foregroundStyle(.white)
                     }
                     .frame(width: 110)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 7)
-                    .glassEffect(
-                        level.isMilestone
-                            ? .regular.tint(.orange.opacity(0.5)) : .regular
-                    )
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
                             .stroke(
@@ -39,6 +36,7 @@ struct GameInfoModal: View {
                                 lineWidth: 3
                             )
                     )
+                    .modifier(DoubleBorderBackground(cornerRadius: 20))
                 }
             }
 
@@ -46,7 +44,6 @@ struct GameInfoModal: View {
                 dismiss()
             }
             .padding(.all)
-            .buttonStyle(.glass)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
