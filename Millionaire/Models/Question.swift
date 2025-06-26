@@ -12,4 +12,5 @@ struct Question: Identifiable, Codable {
     let text: String
     let answers: [String]
     let correctIndex: Int
+    let level: Int
 }

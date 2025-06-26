@@ -5,7 +5,6 @@ A quiz game inspired by the popular TV show **"Who Wants to Be a Millionaire?"**
 ## 🧠 Features
 
 - ✅ 15 random questions loaded from a local JSON file
-- ✅ Clean UI with glassmorphism effect using `glassEffect`
 - ✅ Multiple-choice question layout (A, B, C, D)
 - ✅ Score updates based on prize level
 - ✅ 3 lifelines:
@@ -26,9 +25,7 @@ A quiz game inspired by the popular TV show **"Who Wants to Be a Millionaire?"**
 SwiftUI
 Combine (for reactive state)
 
-## 💡 Ideas for Future Improvements
-[ ] Countdown timer for each question  
-[ ] End game summary with win/loss screen  
+## 💡 Ideas for Future Improvements 
 [ ] Sound effects or animations  
 [ ] Save score history  
 

@@ -16,6 +16,7 @@ struct AppColor {
     static let background3 = Color(hex: "#213F3C")
     static let danger = Color(hex: "#FF3B30")
     static let success = Color(hex: "#34C759")
+    static let warning = Color(hex: "#FFD700")
     static let text = Color(hex: "#60C4AE")
     static let gold = Color(hex: "#F4CC85")
     static let gold2 = Color(hex: "#755622")

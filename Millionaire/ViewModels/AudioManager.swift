@@ -12,18 +12,31 @@ class AudioManager {
     static let shared = AudioManager()
 
     private var backgroundPlayer: AVAudioPlayer?
+    private var soundEffectPlayer: AVAudioPlayer?
 
     func playBackgroundMusic() {
         guard let url = Bundle.main.url(forResource: "Q1_to_q5_bed", withExtension: "mp3") else {
             print("⚠️ Không tìm thấy file nhạc")
             return
         }
-
         do {
             backgroundPlayer = try AVAudioPlayer(contentsOf: url)
             backgroundPlayer?.numberOfLoops = -1 // Lặp vô hạn
-            backgroundPlayer?.volume = 0.5
+//            backgroundPlayer?.volume = 0.5
             backgroundPlayer?.play()
+        } catch {
+            print("🚨 Lỗi phát nhạc: \(error.localizedDescription)")
+        }
+    }
+    
+    func playSoundEffect(_ soundName: String) {
+        guard let url = Bundle.main.url(forResource: soundName, withExtension: "mp3") else {
+            print("⚠️ Không tìm thấy file nhạc")
+            return
+        }
+        do {
+            soundEffectPlayer = try AVAudioPlayer(contentsOf: url)
+            soundEffectPlayer?.play()
         } catch {
             print("🚨 Lỗi phát nhạc: \(error.localizedDescription)")
         }

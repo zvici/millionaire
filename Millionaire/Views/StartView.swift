@@ -19,7 +19,7 @@ struct StartView: View {
                     .padding()
                 Spacer()
                 NavigationLink(destination: GameView()) {
-                    Label("Start Game", systemImage: "play.fill")
+                    Label("Bắt đầu", systemImage: "play.fill")
                         .font(.system(size: 20))
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)
@@ -27,7 +27,7 @@ struct StartView: View {
                 }
                 .modifier(DoubleBorderBackground())
                 Button(action: {}) {
-                    Label("High Score", systemImage: "star.fill")
+                    Label("Điểm cao", systemImage: "star.fill")
                         .font(.system(size: 20))
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)

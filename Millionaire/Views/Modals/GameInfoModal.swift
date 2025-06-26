@@ -13,7 +13,7 @@ struct GameInfoModal: View {
     let prizeLevels: [PrizeLevel]
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             VStack {
                 ForEach(prizeLevels) { level in
                     HStack {
@@ -28,7 +28,7 @@ struct GameInfoModal: View {
                     .padding(.horizontal, 20)
                     .padding(.vertical, 7)
                     .overlay(
-                        RoundedRectangle(cornerRadius: 16)
+                        RoundedRectangle(cornerRadius: 0)
                             .stroke(
                                 Color.white.opacity(
                                     currentLevel + 1 == level.level ? 1 : 0
@@ -36,26 +36,20 @@ struct GameInfoModal: View {
                                 lineWidth: 3
                             )
                     )
-                    .modifier(DoubleBorderBackground(cornerRadius: 20))
+                    .modifier(DoubleBorderBackground(cornerRadius: 0))
                 }
             }
-
             Button("Đóng") {
                 dismiss()
             }
+            .foregroundStyle(.white)
+            .font(.headline)
             .padding(.all)
+            .modifier(DoubleBorderBackground(cornerRadius: 0))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            LinearGradient(
-                colors: [.blue.opacity(0.6), .black],
-                startPoint: .top,
-                endPoint: .bottom
-            )
+            AppColor.background
         )
     }
-}
-
-#Preview {
-    ContentView()
 }

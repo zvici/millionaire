@@ -1,152 +1,992 @@
 [
     {
-        "text": "Điền vào câu thành ngữ sau: Đàn gảy ... trâu?",
+        "text": "Mặt trời mọc ở hướng nào?",
         "answers": [
-            "Chân",
-            "Mắt",
-            "Tai",
-            "Mũi"
+            "Hướng Đông",
+            "Hướng Tây",
+            "Hướng Nam",
+            "Hướng Bắc"
         ],
-        "correctIndex": 2
+        "correctIndex": 0,
+        "level": 1
     },
     {
-        "text": "Thủ đô Pháp?",
+        "text": "Loài vật nào sau đây sống dưới nước và thở bằng mang?",
         "answers": [
-            "London",
-            "Paris",
-            "Berlin",
-            "Rome"
+            "Chim",
+            "Chó",
+            "Cá",
+            "Mèo"
         ],
-        "correctIndex": 1
+        "correctIndex": 2,
+        "level": 1
     },
     {
-        "text": "Loài vật nào được gọi là 'chúa sơn lâm'?",
+        "text": "Thủ đô của Việt Nam là thành phố nào?",
         "answers": [
+            "TP. Hồ Chí Minh",
+            "Đà Nẵng",
+            "Hải Phòng",
+            "Hà Nội"
+        ],
+        "correctIndex": 3,
+        "level": 1
+    },
+    {
+        "text": "Màu sắc của lá cây chủ yếu là màu gì?",
+        "answers": [
+            "Màu đỏ",
+            "Màu vàng",
+            "Màu xanh",
+            "Màu tím"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Khi đèn giao thông chuyển sang màu đỏ, bạn phải làm gì?",
+        "answers": [
+            "Đi tiếp",
+            "Dừng lại",
+            "Đi chậm",
+            "Bấm còi"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Quả chanh có vị gì?",
+        "answers": [
+            "Ngọt",
+            "Mặn",
+            "Đắng",
+            "Chua"
+        ],
+        "correctIndex": 3,
+        "level": 1
+    },
+    {
+        "text": "Con vật nào được mệnh danh là 'vua của rừng xanh'?",
+        "answers": [
+            "Hổ",
             "Voi",
             "Sư tử",
-            "Hổ",
-            "Báo"
+            "Gấu"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "level": 1
     },
     {
-        "text": "Cơ quan nào trong cơ thể người có chức năng bơm máu?",
+        "text": "Trong một tuần có mấy ngày?",
         "answers": [
-            "Phổi",
-            "Gan",
+            "5 ngày",
+            "6 ngày",
+            "7 ngày",
+            "8 ngày"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Đâu là phương tiện giao thông di chuyển trên không?",
+        "answers": [
+            "Tàu hỏa",
+            "Thuyền",
+            "Xe đạp",
+            "Máy bay"
+        ],
+        "correctIndex": 3,
+        "level": 1
+    },
+    {
+        "text": "Chúng ta dùng bộ phận nào của cơ thể để ngửi?",
+        "answers": [
+            "Mắt",
+            "Tai",
+            "Mũi",
+            "Miệng"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Môn thể thao nào có hai đội cố gắng đưa bóng vào rổ của đối phương?",
+        "answers": [
+            "Bóng đá",
+            "Bóng rổ",
+            "Bóng chuyền",
+            "Quần vợt"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Hình gì có 3 cạnh?",
+        "answers": [
+            "Hình tròn",
+            "Hình vuông",
+            "Hình tam giác",
+            "Hình chữ nhật"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Nước đá được tạo thành từ đâu?",
+        "answers": [
+            "Không khí",
+            "Nước",
+            "Lửa",
+            "Đất"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Điền vào câu tục ngữ: 'Uống nước nhớ ...'",
+        "answers": [
+            "sông",
+            "suối",
+            "nguồn",
+            "biển"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Ai là người chữa bệnh cho chúng ta?",
+        "answers": [
+            "Giáo viên",
+            "Công an",
+            "Bác sĩ",
+            "Đầu bếp"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Loài vật nào có cổ dài nhất?",
+        "answers": [
+            "Voi",
+            "Hươu cao cổ",
+            "Ngựa vằn",
+            "Đà điểu"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Màu của bầu trời vào một ngày quang đãng là gì?",
+        "answers": [
+            "Xanh da trời",
+            "Xám",
+            "Đen",
+            "Cam"
+        ],
+        "correctIndex": 0,
+        "level": 1
+    },
+    {
+        "text": "Phép tính '5 + 5' bằng bao nhiêu?",
+        "answers": [
+            "5",
+            "10",
+            "15",
+            "20"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Để xem giờ, người ta dùng vật gì?",
+        "answers": [
+            "Nhiệt kế",
+            "La bàn",
+            "Đồng hồ",
+            "Cân"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Con gà kêu như thế nào?",
+        "answers": [
+            "Meo meo",
+            "Gâu gâu",
+            "Ò ó o",
+            "Be be"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Loài côn trùng nào tạo ra mật?",
+        "answers": [
+            "Ruồi",
+            "Muỗi",
+            "Kiến",
+            "Ong"
+        ],
+        "correctIndex": 3,
+        "level": 1
+    },
+    {
+        "text": "Khi cảm thấy lạnh, bạn thường mặc thêm gì?",
+        "answers": [
+            "Áo mưa",
+            "Áo khoác",
+            "Áo bơi",
+            "Áo ba lỗ"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Từ nào trái nghĩa với 'cao'?",
+        "answers": [
+            "Dài",
+            "To",
+            "Thấp",
+            "Rộng"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Dụng cụ nào dùng để cắt giấy?",
+        "answers": [
+            "Thước",
+            "Bút",
+            "Kéo",
+            "Tẩy"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Mùa nào trong năm có tuyết rơi ở các xứ lạnh?",
+        "answers": [
+            "Mùa xuân",
+            "Mùa hạ",
+            "Mùa thu",
+            "Mùa đông"
+        ],
+        "correctIndex": 3,
+        "level": 1
+    },
+    {
+        "text": "Loài vật nào sau đây đẻ trứng?",
+        "answers": [
+            "Chó",
+            "Mèo",
+            "Vịt",
+            "Lợn"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Bánh chưng là món ăn đặc trưng của ngày lễ nào ở Việt Nam?",
+        "answers": [
+            "Tết Trung Thu",
+            "Tết Nguyên Đán",
+            "Tết Đoan Ngọ",
+            "Giáng Sinh"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Con cá heo sống ở đâu?",
+        "answers": [
+            "Trên sa mạc",
+            "Trong rừng",
+            "Dưới đại dương",
+            "Trên núi"
+        ],
+        "correctIndex": 2,
+        "level": 1
+    },
+    {
+        "text": "Quả dưa hấu thường có ruột màu gì?",
+        "answers": [
+            "Màu vàng",
+            "Màu cam",
+            "Màu trắng",
+            "Màu đỏ"
+        ],
+        "correctIndex": 3,
+        "level": 1
+    },
+    {
+        "text": "Số liền sau của số 99 là số nào?",
+        "answers": [
+            "98",
+            "100",
+            "101",
+            "99"
+        ],
+        "correctIndex": 1,
+        "level": 1
+    },
+    {
+        "text": "Ai là tác giả của truyện thơ 'Lục Vân Tiên'?",
+        "answers": [
+            "Nguyễn Du",
+            "Nguyễn Đình Chiểu",
+            "Hồ Xuân Hương",
+            "Bà Huyện Thanh Quan"
+        ],
+        "correctIndex": 1,
+        "level": 2
+    },
+    {
+        "text": "Hành tinh nào trong Hệ Mặt Trời được biết đến với Vết Đỏ Lớn (Great Red Spot)?",
+        "answers": [
+            "Sao Hỏa",
+            "Sao Thổ",
+            "Sao Mộc",
+            "Sao Thiên Vương"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Ký hiệu hóa học của Bạc là gì?",
+        "answers": [
+            "Au",
+            "Ag",
+            "Fe",
+            "Pb"
+        ],
+        "correctIndex": 1,
+        "level": 2
+    },
+    {
+        "text": "Triều đại nào đã cho xây dựng Văn Miếu - Quốc Tử Giám?",
+        "answers": [
+            "Nhà Đinh",
+            "Nhà Tiền Lê",
+            "Nhà Lý",
+            "Nhà Trần"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Sông Amazon, con sông dài thứ hai thế giới, chủ yếu chảy qua châu lục nào?",
+        "answers": [
+            "Châu Phi",
+            "Châu Á",
+            "Bắc Mỹ",
+            "Nam Mỹ"
+        ],
+        "correctIndex": 3,
+        "level": 2
+    },
+    {
+        "text": "Cơ quan nội tạng lớn nhất trong cơ thể người là gì?",
+        "answers": [
             "Tim",
-            "Thận"
+            "Phổi",
+            "Não",
+            "Da"
         ],
-        "correctIndex": 2
+        "correctIndex": 3,
+        "level": 2
     },
     {
-        "text": "Loại quả nào dưới đây có hạt ở bên ngoài?",
+        "text": "Thành phố nào của Úc nổi tiếng với công trình Nhà hát Opera hình vỏ sò?",
         "answers": [
-            "Cam",
-            "Chuối",
-            "Dâu tây",
-            "Táo"
+            "Melbourne",
+            "Sydney",
+            "Canberra",
+            "Brisbane"
         ],
-        "correctIndex": 2
+        "correctIndex": 1,
+        "level": 2
     },
     {
-        "text": "Từ nào không cùng nhóm: Đỏ, Vàng, Xanh, Nặng?",
+        "text": "Trong cờ vua, quân nào có thể đi thẳng, ngang, dọc với số ô không giới hạn?",
         "answers": [
-            "Đỏ",
-            "Vàng",
-            "Xanh",
-            "Nặng"
+            "Mã",
+            "Tượng",
+            "Xe",
+            "Vua"
         ],
-        "correctIndex": 3
+        "correctIndex": 2,
+        "level": 2
     },
     {
-        "text": "Người Việt thường cúng ông Công ông Táo vào ngày nào?",
+        "text": "Nước nào có đường biên giới trên bộ dài nhất với Việt Nam?",
         "answers": [
-            "23 Tết",
-            "30 Tết",
-            "15 tháng Giêng",
-            "Mùng 1 Tết"
+            "Trung Quốc",
+            "Lào",
+            "Campuchia",
+            "Thái Lan"
         ],
-        "correctIndex": 0
+        "correctIndex": 1,
+        "level": 2
     },
     {
-        "text": "Ai là người sáng lập hãng Microsoft?",
+        "text": "Quá trình cây xanh sử dụng ánh sáng mặt trời để tạo ra năng lượng được gọi là gì?",
         "answers": [
-            "Steve Jobs",
-            "Jeff Bezos",
-            "Mark Zuckerberg",
-            "Bill Gates"
+            "Hô hấp",
+            "Quang hợp",
+            "Bài tiết",
+            "Sinh sản"
         ],
-        "correctIndex": 3
+        "correctIndex": 1,
+        "level": 2
     },
     {
-        "text": "Quốc gia nào nổi tiếng với kim tự tháp?",
+        "text": "Đồng tiền chung châu Âu có tên là gì?",
         "answers": [
+            "Bảng",
+            "Franc",
+            "Dollar",
+            "Euro"
+        ],
+        "correctIndex": 3,
+        "level": 2
+    },
+    {
+        "text": "Ai là người sáng chế ra bảng chữ nổi cho người mù?",
+        "answers": [
+            "Alexander Graham Bell",
+            "Thomas Edison",
+            "Louis Braille",
+            "Marie Curie"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Dòng tranh dân gian 'Đám cưới chuột' thuộc dòng tranh nào?",
+        "answers": [
+            "Tranh Hàng Trống",
+            "Tranh Đông Hồ",
+            "Tranh Kim Hoàng",
+            "Tranh Làng Sình"
+        ],
+        "correctIndex": 1,
+        "level": 2
+    },
+    {
+        "text": "Trong lịch sử Việt Nam, 'Hội nghị Diên Hồng' được triệu tập bởi vị vua nào?",
+        "answers": [
+            "Lý Thái Tổ",
+            "Trần Thái Tông",
+            "Trần Thánh Tông",
+            "Trần Nhân Tông"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Vạn Lý Trường Thành là công trình phòng thủ nổi tiếng của quốc gia nào?",
+        "answers": [
+            "Nhật Bản",
             "Ấn Độ",
-            "Mexico",
             "Ai Cập",
             "Trung Quốc"
         ],
-        "correctIndex": 2
+        "correctIndex": 3,
+        "level": 2
     },
     {
-        "text": "Trong hình học, hình có 5 cạnh gọi là gì?",
+        "text": "Loài vật nào sau đây thuộc lớp bò sát?",
         "answers": [
-            "Tứ giác",
-            "Ngũ giác",
-            "Lục giác",
-            "Thất giác"
+            "Cá voi",
+            "Ếch",
+            "Rắn",
+            "Dơi"
         ],
-        "correctIndex": 1
+        "correctIndex": 2,
+        "level": 2
     },
     {
-        "text": "Hệ điều hành Android thuộc sở hữu công ty nào?",
+        "text": "Hồ Gươm ở Hà Nội còn có tên gọi khác là gì?",
         "answers": [
-            "Apple",
-            "Microsoft",
-            "Google",
-            "Samsung"
+            "Hồ Tây",
+            "Hồ Trúc Bạch",
+            "Hồ Hoàn Kiếm",
+            "Hồ Bảy Mẫu"
         ],
-        "correctIndex": 2
+        "correctIndex": 2,
+        "level": 2
     },
     {
-        "text": "Nguyên tố nào có ký hiệu hóa học là 'O'?",
+        "text": "Trong tác phẩm 'Dế Mèn phiêu lưu ký', Dế Mèn đã vô tình gây ra cái chết cho nhân vật nào?",
         "answers": [
-            "Oxy",
-            "Vàng",
-            "Kali",
-            "Sắt"
+            "Dế Trũi",
+            "Chị Cốc",
+            "Dế Choắt",
+            "Xiến Tóc"
         ],
-        "correctIndex": 0
+        "correctIndex": 2,
+        "level": 2
     },
     {
-        "text": "Tác giả Truyện Kiều là ai?",
+        "text": "Liên đoàn bóng đá thế giới có tên viết tắt là gì?",
         "answers": [
-            "Nguyễn Du",
-            "Nguyễn Trãi",
-            "Hồ Xuân Hương",
-            "Tố Hữu"
+            "UEFA",
+            "AFC",
+            "FIFA",
+            "VFF"
         ],
-        "correctIndex": 0
+        "correctIndex": 2,
+        "level": 2
     },
     {
-        "text": "Một năm nhuận có bao nhiêu ngày?",
+        "text": "Nhà nước đầu tiên trong lịch sử Việt Nam có tên là gì?",
         "answers": [
-            "364",
-            "365",
-            "366",
-            "367"
+            "Âu Lạc",
+            "Văn Lang",
+            "Vạn Xuân",
+            "Đại Cồ Việt"
         ],
-        "correctIndex": 2
+        "correctIndex": 1,
+        "level": 2
     },
     {
-        "text": "Ai là người đầu tiên đặt chân lên Mặt Trăng?",
+        "text": "Thác nước nào nằm trên biên giới giữa Mỹ và Canada?",
         "answers": [
-            "Yuri Gagarin",
-            "Neil Armstrong",
-            "Buzz Aldrin",
-            "Elon Musk"
+            "Thác Angel",
+            "Thác Victoria",
+            "Thác Iguazu",
+            "Thác Niagara"
         ],
-        "correctIndex": 1
+        "correctIndex": 3,
+        "level": 2
+    },
+    {
+        "text": "Ngôn ngữ nào có nhiều người sử dụng nhất thế giới (tính cả người bản ngữ và người học)?",
+        "answers": [
+            "Tiếng Quan Thoại",
+            "Tiếng Tây Ban Nha",
+            "Tiếng Anh",
+            "Tiếng Hindi"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Thành phố cổ Petra, được mệnh danh là 'Thành phố Hoa hồng', nằm ở quốc gia nào?",
+        "answers": [
+            "Ai Cập",
+            "Jordan",
+            "Hy Lạp",
+            "Thổ Nhĩ Kỳ"
+        ],
+        "correctIndex": 1,
+        "level": 2
+    },
+    {
+        "text": "Đỉnh núi cao nhất trong Hệ Mặt Trời nằm trên hành tinh nào?",
+        "answers": [
+            "Trái Đất",
+            "Sao Hỏa",
+            "Sao Mộc",
+            "Mặt Trăng"
+        ],
+        "correctIndex": 1,
+        "level": 2
+    },
+    {
+        "text": "Ai là người phụ nữ đầu tiên nhận giải Nobel?",
+        "answers": [
+            "Dorothy Hodgkin",
+            "Marie Curie",
+            "Irène Joliot-Curie",
+            "Bertha von Suttner"
+        ],
+        "correctIndex": 1,
+        "level": 2
+    },
+    {
+        "text": "Cuộc Duy tân Minh Trị là một cuộc cải cách lớn diễn ra ở quốc gia nào?",
+        "answers": [
+            "Trung Quốc",
+            "Hàn Quốc",
+            "Nhật Bản",
+            "Việt Nam"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Môn võ Vovinam có nguồn gốc từ đâu?",
+        "answers": [
+            "Nhật Bản",
+            "Việt Nam",
+            "Hàn Quốc",
+            "Brazil"
+        ],
+        "correctIndex": 1,
+        "level": 2
+    },
+    {
+        "text": "Trong âm nhạc, thuật ngữ 'crescendo' có nghĩa là gì?",
+        "answers": [
+            "Chơi nhỏ dần",
+            "Chơi nhanh hơn",
+            "Chơi mạnh dần",
+            "Chơi chậm lại"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Đâu là loại virus máy tính được đặt tên theo một con ngựa gỗ trong thần thoại Hy Lạp?",
+        "answers": [
+            "Worm",
+            "Spyware",
+            "Trojan",
+            "Ransomware"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Loài cá nào có khả năng tạo ra dòng điện mạnh để tự vệ và săn mồi?",
+        "answers": [
+            "Cá mập",
+            "Cá nóc",
+            "Cá chình điện",
+            "Cá hồi"
+        ],
+        "correctIndex": 2,
+        "level": 2
+    },
+    {
+        "text": "Nguyên tố hóa học nào được đặt theo tên của người tạo ra bảng tuần hoàn?",
+        "answers": [
+            "Einsteinium",
+            "Fermium",
+            "Nobelium",
+            "Mendelevium"
+        ],
+        "correctIndex": 3,
+        "level": 3
+    },
+    {
+        "text": "Trong thuật ngữ âm nhạc, 'fortissimo' (ƒƒ) chỉ dẫn người chơi nhạc phải chơi như thế nào?",
+        "answers": [
+            "Rất nhỏ",
+            "Bình thường",
+            "Rất mạnh",
+            "Ngắt quãng"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Vị vua đầu tiên của nhà Hồ, người đã cho phát hành tiền giấy đầu tiên ở Việt Nam là ai?",
+        "answers": [
+            "Hồ Quý Ly",
+            "Hồ Hán Thương",
+            "Trần Thiếu Đế",
+            "Hồ Tông Thốc"
+        ],
+        "correctIndex": 0,
+        "level": 3
+    },
+    {
+        "text": "Hiệu ứng Coriolis giải thích hiện tượng nào sau đây?",
+        "answers": [
+            "Sự hình thành cầu vồng",
+            "Sự lệch hướng của các cơn bão",
+            "Sự giãn nở của vũ trụ",
+            "Sự thay đổi màu của lá cây"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Thang đo Kardashev được dùng để phân loại cái gì?",
+        "answers": [
+            "Độ cứng của khoáng vật",
+            "Độ mạnh của động đất",
+            "Cấp độ của bão",
+            "Mức độ tiến bộ công nghệ của một nền văn minh"
+        ],
+        "correctIndex": 3,
+        "level": 3
+    },
+    {
+        "text": "Bức ảnh thành công đầu tiên trên thế giới, 'View from the Window at Le Gras', được chụp vào thập niên nào?",
+        "answers": [
+            "1780s",
+            "1800s",
+            "1820s",
+            "1850s"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Ai là người đã sáng tác vở opera 'Đám cưới của Figaro'?",
+        "answers": [
+            "Bach",
+            "Beethoven",
+            "Vivaldi",
+            "Mozart"
+        ],
+        "correctIndex": 3,
+        "level": 3
+    },
+    {
+        "text": "'Nghịch lý Fermi' trong vật lý thiên văn và vũ trụ học đề cập đến vấn đề gì?",
+        "answers": [
+            "Sự mâu thuẫn giữa tốc độ giãn nở của vũ trụ và tuổi của nó",
+            "Sự mâu thuẫn giữa ước tính cao về sự tồn tại của sự sống ngoài Trái Đất và sự thiếu bằng chứng",
+            "Sự mâu thuẫn giữa cơ học lượng tử và thuyết tương đối rộng",
+            "Sự mâu thuẫn giữa khối lượng quan sát được và khối lượng lý thuyết của các thiên hà"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Cuộc chiến tranh Trăm năm là cuộc xung đột kéo dài giữa hai vương quốc nào?",
+        "answers": [
+            "Anh và Tây Ban Nha",
+            "Anh và Pháp",
+            "Pháp và Phổ",
+            "Tây Ban Nha và Bồ Đào Nha"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Trong kinh tế học, 'Đường cong Phillips' mô tả mối quan hệ nghịch đảo giữa hai yếu tố nào?",
+        "answers": [
+            "Cung và cầu",
+            "Lạm phát và tăng trưởng kinh tế",
+            "Lạm phát và thất nghiệp",
+            "Thuế và doanh thu của chính phủ"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Thí nghiệm hai khe (Double-slit experiment) là một thí nghiệm nổi tiếng chứng tỏ tính chất lưỡng tính sóng-hạt của đối tượng nào?",
+        "answers": [
+            "Nguyên tử",
+            "Proton",
+            "Electron",
+            "Tế bào"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Con tàu nào đã thực hiện chuyến đi đầu tiên vòng quanh thế giới?",
+        "answers": [
+            "Santa Maria",
+            "Mayflower",
+            "Endeavour",
+            "Victoria"
+        ],
+        "correctIndex": 3,
+        "level": 3
+    },
+    {
+        "text": "Trận chiến nào được xem là trận thủy chiến lớn nhất trong lịch sử Việt Nam, do Ngô Quyền lãnh đạo?",
+        "answers": [
+            "Trận Rạch Gầm - Xoài Mút",
+            "Trận Bạch Đằng năm 938",
+            "Trận Vân Đồn",
+            "Trận Bạch Đằng năm 1288"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Mật mã Enigma được quân đội của quốc gia nào sử dụng rộng rãi trong Thế chiến thứ hai?",
+        "answers": [
+            "Đức Quốc xã",
+            "Đế quốc Nhật",
+            "Liên Xô",
+            "Anh"
+        ],
+        "correctIndex": 0,
+        "level": 3
+    },
+    {
+        "text": "Trong toán học, số nào sau đây là một 'số hoàn hảo' (số mà tổng các ước thật của nó bằng chính nó)?",
+        "answers": [
+            "12",
+            "20",
+            "28",
+            "32"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Tác phẩm 'Đông Chu Liệt Quốc' là một bộ tiểu thuyết lịch sử viết về giai đoạn nào của Trung Quốc?",
+        "answers": [
+            "Nhà Hán",
+            "Nhà Đường",
+            "Thời Xuân Thu và Chiến Quốc",
+            "Thời Tam Quốc"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Định lý bất toàn của Gödel thuộc lĩnh vực nào?",
+        "answers": [
+            "Vật lý lượng tử",
+            "Logic toán học",
+            "Lý thuyết xác suất",
+            "Hình học vi phân"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Hội họa trường phái Lập thể (Cubism) được khởi xướng bởi hai họa sĩ nào?",
+        "answers": [
+            "Vincent van Gogh và Paul Gauguin",
+            "Claude Monet và Pierre-Auguste Renoir",
+            "Salvador Dalí và René Magritte",
+            "Pablo Picasso và Georges Braque"
+        ],
+        "correctIndex": 3,
+        "level": 3
+    },
+    {
+        "text": "Tuyến đường sắt xuyên Siberia, tuyến đường sắt dài nhất thế giới, nối liền hai thành phố nào của Nga?",
+        "answers": [
+            "Saint Petersburg và Kazan",
+            "Moscow và Vladivostok",
+            "Volgograd và Novosibirsk",
+            "Sochi và Yekaterinburg"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Đơn vị tiền tệ nào có giá trị nhất thế giới tính đến đầu thập niên 2020?",
+        "answers": [
+            "Bảng Anh (GBP)",
+            "Franc Thụy Sĩ (CHF)",
+            "Dinar Kuwait (KWD)",
+            "Đô la Mỹ (USD)"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Bộ luật nào được xem là bộ luật thành văn cổ nhất còn được bảo tồn tương đối nguyên vẹn?",
+        "answers": [
+            "Bộ luật Ur-Nammu",
+            "Bộ luật Hammurabi",
+            "Luật Mười hai bảng",
+            "Bộ luật Manu"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "'Vùng 51' (Area 51), một địa điểm quân sự bí ẩn, nằm ở tiểu bang nào của Hoa Kỳ?",
+        "answers": [
+            "California",
+            "Arizona",
+            "New Mexico",
+            "Nevada"
+        ],
+        "correctIndex": 3,
+        "level": 3
+    },
+    {
+        "text": "Trong triều đại nhà Nguyễn, kỳ thi cao cấp nhất để tuyển chọn nhân tài được gọi là gì?",
+        "answers": [
+            "Thi Hương",
+            "Thi Hội",
+            "Thi Đình",
+            "Thi Phủ"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Nhà giả kim thuật nào được cho là đã khám phá ra Phốt pho?",
+        "answers": [
+            "Paracelsus",
+            "Nicolas Flamel",
+            "Hennig Brand",
+            "Jabir ibn Hayyan"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Trong vũ trụ học, 'Bức xạ nền vi sóng vũ trụ' (CMB) được coi là bằng chứng cho lý thuyết nào?",
+        "answers": [
+            "Lý thuyết Dây",
+            "Lý thuyết Vụ Nổ Lớn (Big Bang)",
+            "Lý thuyết Trạng thái dừng",
+            "Lý thuyết Đa vũ trụ"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Hòn đảo nào lớn nhất trên Địa Trung Hải?",
+        "answers": [
+            "Sardinia",
+            "Cyprus",
+            "Crete",
+            "Sicily"
+        ],
+        "correctIndex": 3,
+        "level": 3
+    },
+    {
+        "text": "Tác phẩm 'Ulysses' của James Joyce là một ví dụ tiêu biểu của trường phái văn học nào?",
+        "answers": [
+            "Lãng mạn",
+            "Hiện thực",
+            "Chủ nghĩa hiện đại",
+            "Hậu hiện đại"
+        ],
+        "correctIndex": 2,
+        "level": 3
+    },
+    {
+        "text": "Hiệu ứng quang điện được giải thích lần đầu tiên bởi nhà khoa học nào, mang lại cho ông giải Nobel Vật lý?",
+        "answers": [
+            "Max Planck",
+            "Albert Einstein",
+            "Niels Bohr",
+            "Werner Heisenberg"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "Vị vua nào của Anh đã ký vào bản Magna Carta năm 1215, một văn kiện quan trọng trong lịch sử hiến pháp?",
+        "answers": [
+            "Richard the Lionheart",
+            "King John",
+            "Henry VIII",
+            "Edward I"
+        ],
+        "correctIndex": 1,
+        "level": 3
+    },
+    {
+        "text": "'Hằng số Planck' là một hằng số vật lý cơ bản, là trung tâm của lý thuyết nào?",
+        "answers": [
+            "Cơ học cổ điển",
+            "Thuyết tương đối",
+            "Cơ học lượng tử",
+            "Nhiệt động lực học"
+        ],
+        "correctIndex": 2,
+        "level": 3
     }
 ]

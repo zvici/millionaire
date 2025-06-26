@@ -23,7 +23,7 @@ struct AskAudienceModal: View {
     var voteResults: [AudienceVote] {
         let indices: [Int]
         if let fiftyFifty = fiftyFiftyIndices {
-            indices = fiftyFifty
+            indices = fiftyFifty.sorted()
         } else {
             indices = [0, 1, 2, 3]
         }
@@ -76,6 +76,8 @@ struct AskAudienceModal: View {
                     }
                 }
             }
+            .chartXAxis(.hidden)
+            .chartYAxis(.hidden)
             .frame(height: 300)
             .padding()
             Button("Đóng") {

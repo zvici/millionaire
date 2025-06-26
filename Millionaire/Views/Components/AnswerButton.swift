@@ -10,7 +10,21 @@ import SwiftUI
 struct AnswerButton: View {
     let title: String
     let dimmed: Bool
+    let backgroundColor: Color
     let action: () -> Void
+    
+    init(
+        title: String,
+        dimmed: Bool,
+        backgroundColor: Color = AppColor.background3,
+        action: @escaping () -> Void
+    ) {
+        self.title = title
+        self.dimmed = dimmed
+        self.backgroundColor = backgroundColor
+        self.action = action
+    }
+
 
     var body: some View {
         Button(action: {
@@ -37,7 +51,8 @@ struct AnswerButton: View {
                         lineWidth: 5
                     )
                 Rectangle()
-                    .fill(AppColor.background3)
+                    .fill(backgroundColor)
+                    .animation(.easeInOut(duration: 0.3), value: backgroundColor)
             }
         )
         .opacity(dimmed ? 0.1 : 1.0)
